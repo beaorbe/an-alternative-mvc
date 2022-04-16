@@ -11,7 +11,7 @@ import lombok.Data;
 @Table("WINE")
 public class Wine {
     @Id
-    private String id;
+    private Long id;
 
     private String wineName;
     private int year;

@@ -1,2 +1,7 @@
+com/rioja/wineCellar/repository/WineRepository.class
 com/rioja/wineCellar/model/Wine$WineBuilder.class
+com/rioja/wineCellar/service/implementation/WineServiceImplementation.class
+com/rioja/wineCellar/service/WineService.class
 com/rioja/wineCellar/WineCellarApplication.class
+com/rioja/wineCellar/controller/WineController.class
+com/rioja/wineCellar/model/Wine.class

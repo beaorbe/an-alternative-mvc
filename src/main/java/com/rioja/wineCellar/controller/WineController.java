@@ -26,22 +26,27 @@ public class WineController {
     public ResponseEntity<Iterable<Wine>> retrieveWines(@RequestParam(required=false) String year) {
 
         Iterable<Wine> response = wineService.retrieveWines(year);
+        for (Wine wine : response) {
+            System.out.println(wine.toString());
+        }
         return ResponseEntity.ok().body(response);
     }
 
-    // @PostMapping("/wines")
-    // public ResponseEntity<Wine> createWine(@RequestBody Wine wine) {
-    //     Wine newWine = wineService.createWine(wine);
-    //     return ResponseEntity.ok().body(newWine);
-    // }
+    @PostMapping("/wines")
+    public ResponseEntity<Wine> createWine(@RequestBody Wine wine) {
+        // Created by Lombok
+        wine.setId(null);
+        Wine newWine = wineService.createWine(wine);
+        return ResponseEntity.ok().body(newWine);
+    }
 
-    @GetMapping("/wines/{id}/")
+    @GetMapping("/wines/{id}")
     public ResponseEntity<Wine> retrieveWine(@PathVariable String id) {
         Wine response = wineService.retrieveWine(id);
         return ResponseEntity.ok().body(response);
     }
 
-    @PutMapping("/wines/{id}/")
+    @PutMapping("/wines/{id}")
     public ResponseEntity<Wine> updateWine(@PathVariable String id, @RequestBody Wine wine) {
         Wine newWine = wineService.updateWine(id, wine);
         if (newWine == null) {

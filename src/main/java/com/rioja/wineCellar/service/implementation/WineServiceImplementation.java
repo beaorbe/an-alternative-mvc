@@ -13,6 +13,11 @@ public class WineServiceImplementation implements WineService {
     private WineRepository wineRepository;
     
     @Override
+    public Wine createWine(Wine wine) {
+        return wineRepository.save(wine);
+    }
+
+    @Override
     public Iterable<Wine> retrieveWines(String year) {
         if (year == null) {
             return wineRepository.findAll();
