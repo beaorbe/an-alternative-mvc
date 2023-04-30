@@ -1,0 +1,43 @@
+
+fieldset
+{
+    background-color: blanchedalmond;
+    margin-left: 15vw;
+    margin-right: 1vw;
+    width: 70vw;
+}
+
+h2{
+    text-align: center;
+}
+
+legend{
+    text-align: center;
+}
+
+button{
+    background-color: rgb(251, 196, 145);
+    padding: 1em;
+    margin:1em; 
+    /*border: 4px solid blanchedalmond;*/ 
+    transition:all .5s ease-in-out;
+}
+
+button:hover{
+    background-color: blanchedalmond;;
+}
+
+
+footer {
+    text-align: center;
+    position: absolute;
+    margin-left: 0;
+    height: 3em;
+    width: 100vw;
+    background:rgb(251, 196, 145);
+    grid-area: footer;
+    opacity: .4 ;
+    bottom: 0;
+}
+
+

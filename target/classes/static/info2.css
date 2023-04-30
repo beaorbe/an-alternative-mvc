@@ -1,0 +1,104 @@
+*{
+    background-color: blanchedalmond;
+}
+
+body{
+height: 100%;
+}
+
+body * {
+padding: 10px;
+}
+
+.cabecera {
+height: 20%;
+background:blanchedalmond;
+text-align: center;
+}
+
+/* NAV BAR */
+.cabecera nav{
+    background: rgb(251, 196, 145);
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: 21%;
+    transition:all .5s ease-in-out;
+}
+.contenedor {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    background: rgb(251, 196, 145);
+    padding: 0;
+  }
+  .contenedor li {
+    flex: 0 1 0;
+    background-color: rgb(251, 196, 145);
+  }
+  .contenedor li:first-child 
+  {
+    background-color: rgb(251, 196, 145);
+
+  }
+  .contenedor a {
+    font: 15px monospace;
+    text-align: center;
+    text-decoration:underline;
+    display: block;
+    padding: 2px;
+    color: black;
+    background-color: rgb(251, 196, 145);
+    user-select: none;
+  }
+
+  .contenedor li a
+  {
+    transition:all .5s ease-in-out;
+  }
+  
+  .contenedor li a:hover {
+    background: blanchedalmond;
+  }
+
+
+/*fin nav bar*/
+
+/*Tabla*/
+.secciones {
+background: blanchedalmond;
+
+
+}
+
+table{
+  width: 60vw;
+  height: 40vh;
+  margin-left:auto ;
+  margin-right: auto;
+}
+
+
+
+footer {
+  text-align: center;
+  position: absolute;
+  margin-left: 0;
+  height: 2em;
+  width: 100vw;
+  background:rgb(251, 196, 145);
+  grid-area: footer;
+  opacity: .4 ;
+  bottom: 0;
+  left: 0;
+  }
+
+fieldset
+{
+    height: 20em;
+}
+
+p{
+    height: 5em;
+}
+

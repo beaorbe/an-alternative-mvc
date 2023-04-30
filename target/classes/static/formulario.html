@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI PRIMERA PAGINA</title>
+    <link rel="stylesheet" href="formulario.css">
+    <script src="formulario.js"></script>
+</head>
+
+<body style="background-color: blanchedalmond">
+     <h2 style="color: black">ÚNETE A NOSOTROS PARA OBTENER MAS INFORMACIÓN SOBRE EL MUNDO DEL HOCKEY: </h2> 
+     <h2 style="color: black">COMPLETE LOS CAMPOS Y SELECCIONE UNA OPCION</h2> 
+
+      <fieldset style="background-color: rgb(251, 196, 145);">
+        <legend><b>DATOS PERSONALES DE INTERÉS</b></legend>
+        <form>
+            <p>
+                <label for="NOMBRE">NOMBRE: <p></p></label>
+                <input type="text" id="NOMBRE" name="name" required><br> 
+            </p>
+            <p>
+                <label for="APELLIDOS">APELLIDOS:<p></p> </label>
+                <input type="text" id="APELLIDOS" name="apellidos" required><br> 
+            </p>
+            <p>
+                <label for="EMAIL">EMAIL:<p></p> </label>
+                <input type="email" id="EMAIL" name="email" required><br>
+            </p>
+            <p>
+                <label for="TEELFONO">TELEFONO: <p></p></label>
+                <input type="tel" id="TELEFONO" name="phone" required><br>
+            </p>
+                <button onclick="createPersona()">Crear Usuario</button>
+                <button onclick="Eliminartodos()">Eliminar usuarios</button>
+                <button onclick="searchPersonas()">Ver número de usuarios registrados</button>
+                <button onclick="location.href='./index.html'">Volver a la página principal</button>
+            </fieldset>
+        </form>
+
+            <footer class="pie">
+        
+                Página hecha por Beatriz Ordoñez #HockerHierba
+        
+        </footer>
+</body>
+

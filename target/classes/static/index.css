@@ -1,0 +1,174 @@
+*{
+    background-color: blanchedalmond;
+}
+
+body{
+height: 100%;
+display: grid;
+grid-template-columns: 2fr 3fr 1fr;
+grid-template-areas:
+  "header   header header"
+  "sections main   main"
+  "footer   footer footer";
+gap: 7px;
+padding: 12px;
+text-align: center;
+font: 12px sans-serif;
+margin: 0;
+overflow: hidden;
+}
+
+body * {
+padding: 10px;
+}
+
+/*Intento de ajustar la imagen que no acacba de funcionar*/
+@media (max-width: 20px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sections"
+      "index"
+      "main"
+      "footer";
+  }
+}
+
+.cabecera {
+height: 20%;
+background:blanchedalmond;
+grid-area: header;
+text-align: center;
+}
+
+/* NAV BAR */
+.cabecera nav{
+    background: rgb(251, 196, 145);
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: 20%;
+    transition:all .5s ease-in-out;
+}
+.contenedor {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    background: rgb(251, 196, 145);
+    padding: 0;
+  }
+
+  .contenedor li {
+    flex: 0 1 0;
+    background-color: rgb(251, 196, 145);
+  }
+
+  .contenedor a:hover{
+    background-color: blanchedalmond;;
+  }
+
+  .contenedor li:first-child 
+  {
+    background-color: rgb(251, 196, 145);
+
+  }
+  .contenedor a {
+    font: 15px monospace;
+    text-align: center;
+    text-decoration:underline;
+    display: block;
+    padding: 2px;
+    color: black;
+    background-color: rgb(251, 196, 145);
+    user-select: none;
+    transition:all .5s ease-in-out;
+  }
+  .contenedor li a:hover {
+    background: blanchedalmond;
+  }
+
+/*fin nav bar*/
+
+/*foto*/
+.secciones {
+background: blanchedalmond;
+grid-area: sections;
+}
+
+/*texto info*/
+.contenido {
+text-align: left;
+background: rgb(251, 196, 145);
+grid-area: main;
+}
+
+.contenido p 
+{
+  text-align: justify;
+  height: 40vh;
+  display: flex;
+  position: relative;
+}
+
+.contenido a 
+{
+  background-color:rgb(246, 177, 114); ;
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    margin-left: 0;
+    height: 2em;
+    width: 100vw;
+    background:rgb(251, 196, 145);
+    grid-area: footer;
+    opacity: .4 ;
+    bottom: 0;
+    left: 0;
+    }
+
+.idiom{
+  width: 7em;
+  margin-left: 5em;
+  transition:all .5s ease-in-out;
+
+}
+
+.idiom :hover{
+  background-color: blanchedalmond;;
+}
+
+button 
+{
+  background-color: rgb(251, 196, 145);
+  position: relative;
+  margin-top: 0;
+  margin-left: 10em;
+  height: 4em;
+  padding: 0.5em;
+  border:0;
+  transition:all .5s ease-in-out;
+}
+
+button :hover{
+  background-color: blanchedalmond;;
+}
+
+button a{
+  transition:all .5s ease-in-out;
+  height: 10em;
+
+}
+
+button a :hover{
+  background-color: blanchedalmond;;
+}
+
+
+h{
+  font: 12px sans-serif;
+}
+

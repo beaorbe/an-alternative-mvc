@@ -1,0 +1,152 @@
+*{
+    background-color: blanchedalmond;
+}
+
+body{
+height: 100%;
+display: grid;
+grid-template-columns: 2fr 3fr 1fr;
+grid-template-areas:
+  "header   header header"
+  "sections main   main"
+  "footer   footer footer";
+gap: 7px;
+padding: 12px;
+text-align: center;
+font: 12px sans-serif;
+overflow: hidden;
+}
+
+body * {
+padding: 10px;
+}
+
+.cabecera {
+height: 20%;
+background:blanchedalmond;
+grid-area: header;
+text-align: center;
+}
+
+/* NAV BAR */
+.cabecera nav{
+    background: rgb(251, 196, 145);
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: 21%;
+}
+.contenedor {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    background: rgb(251, 196, 145);
+    padding: 0;
+  }
+  .contenedor li {
+    flex: 0 1 0;
+    background-color: rgb(251, 196, 145);
+  }
+  .contenedor li:first-child 
+  {
+    background-color: rgb(251, 196, 145);
+
+  }
+  .contenedor a {
+    font: 15px monospace;
+    text-align: center;
+    text-decoration:underline;
+    display: block;
+    padding: 2px;
+    color: black;
+    background-color: rgb(251, 196, 145);
+    user-select: none;
+  }
+  .contenedor li a:hover {
+    background: blanchedalmond;
+  }
+
+/*fin nav bar*/
+
+/*foto*/
+.secciones {
+background: blanchedalmond;
+grid-area: sections;
+
+}
+
+/*texto info*/
+.contenido {
+text-align: left;
+background: rgb(251, 196, 145);
+grid-area: main;
+}
+
+.contenido p 
+{
+  text-align: justify;
+  height: 5vh;
+  display: flex;
+  position: relative;
+}
+
+footer {
+    position: absolute;
+    margin-left: 0;
+    height: 2em;
+    width: 100vw;
+    background:rgb(251, 196, 145);
+    grid-area: footer;
+    opacity: .4 ;
+    bottom: 0;
+    left: 0;
+    }
+
+fieldset
+{
+    height: 28em;
+}
+
+
+#parrafoImp
+{
+  height: 6em;
+}
+
+p{
+    height: 5em;
+}
+
+#pri
+{
+    background-color:rgb(251, 196, 145) ;
+}
+
+#seg
+{
+    background-color:blanchedalmond;;
+}
+
+fieldset button
+{ 
+  left: 10vw;
+  background-color: rgb(251, 196, 145);
+  position: relative;
+  height: 4em;
+  padding: 0.5em;
+  border:0;
+  transition:all .5s ease-in-out;
+}
+
+fieldset button:hover{
+  background-color: rgb(237, 170, 68);
+}
+
+
+.contenedor a{
+  transition:all .5s ease-in-out;
+}
+
+.contenedor a:hover{
+  background-color: blanchedalmond;;
+}
